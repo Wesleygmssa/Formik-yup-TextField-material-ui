@@ -34,8 +34,9 @@ function App() {
             value={formik.values.firstName}
             // quando não tiver focus
             onBlur={formik.handleBlur}
-            //error
+            //error exibirar uma borda vermmelha padrão do Material icons
             error={formik.errors.firstName}
+            //label
             helperText={formik.errors.firstName}
           />
           <br></br>
