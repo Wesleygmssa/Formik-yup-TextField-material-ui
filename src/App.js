@@ -36,9 +36,10 @@ function App() {
             onBlur={formik.handleBlur}
             //error
             error={formik.errors.firstName}
+            helperText={formik.errors.firstName}
           />
           <br></br>
-          <span>{formik.errors.firstName}</span>
+          {/* <span>{formik.errors.firstName}</span> */}
         </div>
         <br></br>
         <button onClick={formik.handleSubmit} type="submit">
